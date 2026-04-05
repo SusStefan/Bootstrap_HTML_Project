@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Ex1</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index2.html">Return to Main Page</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                       <li class="nav-item"><a class="nav-link" href="about.html">About Page</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ex2.html">Exercise b)</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ex3.html">Exercise c)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- About-->
+        <section class="about-section text-center" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-4 justify-content-center">
+                    <div class="col-lg-100">
+                      <h1 class="mx-auto my-0 text-uppercase" style = "color:white">Exercise a)</h1>
+                        <p class="text-white-50">
+                            a) Sa se realizeze codul care la executie să functioneze ca si in fereastra de mai jos. La
+deplasarea mouse-ului peste cele trei butoane se va schimba fondul paginii în mod
+corespunzător.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Main Body-->
+        <section class="projects-section" id="projects">
+            <div class="container px-4 px-lg-4 align-items-center ">
+                <div class="row gx-0 mb-4 mb-lg-3 align-items-center justify-content-center">   
+                 <div class="col-auto d-flex gap-3">
+                           <a class="btn btn-primary " color="red" id="red">Red</a>
+                 
+                           <a class="btn btn-primary" color="blue" id="blue">Blue</a>
+                           <a class="btn btn-primary" color="green" id="green">Green</a>
+                   </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer small text-center text-black-100 bg-gray-50"><div class="container px-4 px-lg-5">Copyright &copy; Your Website 2026</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script>
+          // Select all buttons with the class 'btn'
+    const buttons = document.querySelectorAll('.btn');
+    buttons.forEach(button => {
+        button.addEventListener('mouseenter', function() {
+            document.body.style.backgroundColor = this.id;
+            document.getElementByClass('footer').style.backgroundColor = this.id;
+            document.getElementById('projects').style.backgroundColor = this.id;
+        });
+        button.addEventListener('mouseleave', function() {
+            document.body.style.backgroundColor = ""; 
+            document.footer.style.backgroundColor = "";
+
+        });
+    });
+        </script>
+    <style>
+
+      #red{
+        background-color: red;
+      }
+      #blue{
+        background-color: blue;
+      }
+      #green{
+        background-color: green;
+      }
+      #red:hover{
+        background-color: gray;
+      }
+      #blue:hover{
+        background-color: gray;
+      }
+      #green:hover{
+        background-color: gray;
+      }
+    </style>
+    </body>
+
+</html>

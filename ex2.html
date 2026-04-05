@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Ex2</title>
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand" href="index2.html">Return to Main Page</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                       <li class="nav-item"><a class="nav-link" href="about.html">About Page</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ex1.html">Exercise a)</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ex3.html">Exercise c)</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- About-->
+        <section class="about-section text-center" id="about">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-4 justify-content-center">
+                    <div class="col-lg-100">
+                      <h1 class="mx-auto my-0 text-uppercase" style = "color:white">Exercise b)</h1>
+                        <p class="text-white-50">
+                            b)  Sa se realizeze codul care la executie să functioneze ca si in fereastra de mai jos. Se
+va introduce cu verificare dacă se incadrează în cerințele de 4 cifre introduce in
+interfață. La Submit se va furniza un mesaj către utilizator
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Main Body-->
+        <section class="projects-section" id="projects">
+            <div class="container px-4 px-lg-4 align-items-center ">
+                <div class="row gx-0 mb-4 mb-lg-3 align-items-center justify-content-center">   
+                    <div class="flex-column d-flex gap-10 mb-5 ">
+                        <div>
+                            <h2 class="text-black mb-5">Enter a 4-digit number</h2>
+                        </div>
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- * * SB Forms Contact Form * *-->
+                        <!-- * * * * * * * * * * * * * * *-->
+                        <!-- This form is pre-integrated with SB Forms.-->
+                        <!-- To make this form functional, sign up at-->
+                        <!-- https://startbootstrap.com/solution/contact-forms-->
+                        <!-- to get an API token!-->
+                        <form class="form-signup" id="contactForm" data-sb-form-api-token="API_TOKEN">
+                            <div class="row input-group-newsletter">
+                                <div class="col"><input required class="form-control" id="fourdigitnumber" type="number" placeholder="Enter number..." aria-label="Enter number..."/></div>
+                                </div>
+                                <div class="col mt-5"><button class="btn btn-primary" id="submitButton" type="submit">Submit!</button></div>
+                        </form>
+                    </div>
+                   </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container px-4 px-lg-5">Copyright &copy; Your Website 2026</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script>
+          // Select all buttons with the class 'btn'
+    const contactForm = document.getElementById('contactForm');
+    const numberInput = document.getElementById('fourdigitnumber');
+    
+    contactForm.addEventListener('submit', function(e){
+        e.preventDefault();
+        const val = numberInput.value;
+        if(val.length===4){
+            alert("Success! " + val + " is a 4-digit number.");
+        } else {
+            alert("Error: Please enter exactly 4 digits ! You've entered " + val.length +" digits !");
+        }
+    })
+    
+        </script>
+    </body>
+
+</html>
